@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Age & Duration Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1 class="title"><span class="g1">Age &</span> <span class="g2">Duration Calculator</span></h1>
+      <p class="subtitle">Calculate the precise duration between two moments in time.</p>
+    </header>
+
+    <section class="controls">
+      <div class="row">
+        <label class="field">
+          <div class="label-top">From</div>
+          <input id="from" type="datetime-local">
+        </label>
+
+        <label class="field">
+          <div class="label-top">To <span class="toggle-wrap">
+            <input id="useNow" type="checkbox">
+            <small>Use Current Time</small>
+          </span></div>
+          <input id="to" type="datetime-local">
+        </label>
+      </div>
+    </section>
+
+    <section class="result">
+      <div class="total-box">
+        <div class="total-label">Total Duration</div>
+        <div class="total-value" id="totalValue">
+          <span class="big" id="years">0</span>
+          <span class="unit">years</span>
+          <span class="big" id="months">0</span>
+          <span class="unit">months</span>
+          <span class="big" id="days">0</span>
+          <span class="unit">days</span>
+          <span class="big" id="hours">0</span>
+          <span class="unit">hours</span>
+          <span class="big" id="minutes">0</span>
+          <span class="unit">minutes</span>
+          <span class="big" id="seconds">0</span>
+          <span class="unit">seconds</span>
+        </div>
+      </div>
+
+      <div class="grid" id="otherUnits">
+        <div class="card"><div class="num" id="monthsTot">0</div><div class="label">MONTH</div></div>
+        <div class="card"><div class="num" id="weeksTot">0</div><div class="label">WEEKS</div></div>
+        <div class="card"><div class="num" id="daysTot">0</div><div class="label">DAYS</div></div>
+        <div class="card"><div class="num" id="hoursTot">0</div><div class="label">HOURS</div></div>
+        <div class="card"><div class="num" id="minutesTot">0</div><div class="label">MINUTES</div></div>
+        <div class="card"><div class="num" id="secondsTot">0</div><div class="label">SECONDS</div></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
